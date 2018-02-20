@@ -1,0 +1,300 @@
+AllCops:
+  Exclude:
+    - bin/*
+    - 'db/**/*'
+    - 'lib/tasks/*'
+    - 'vendor/**/*'
+    - 'tmp/**/*'
+  TargetRubyVersion: 2.2
+  DisplayCopNames: true
+
+AccessorMethodName:
+  Enabled: true
+
+AlignArray:
+  Enabled: true
+
+# Configuration parameters: EnforcedHashRocketStyle, EnforcedColonStyle, EnforcedLastArgumentHashStyle, SupportedLastArgumentHashStyles.
+AlignHash:
+  Enabled: true
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+AlignParameters:
+  Enabled: true
+
+AmbiguousOperator:
+  Enabled: true
+
+AndOr:
+  Enabled: true
+
+AsciiComments:
+  Enabled: false
+
+# Configuration parameters: AllowSafeAssignment.
+AssignmentInCondition:
+  Enabled: true
+
+BlockAlignment:
+  Enabled: true
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+BracesAroundHashParameters:
+  Enabled: true
+
+CaseEquality:
+  Enabled: true
+
+CaseIndentation:
+  Enabled: true
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+ClassAndModuleChildren:
+  Enabled: false
+
+# Configuration parameters: CountComments.
+ClassLength:
+  Max: 400
+
+ClassVars:
+  Enabled: true
+
+# Configuration parameters: PreferredMethods.
+CollectionMethods:
+  Enabled: true
+
+# Configuration parameters: Keywords.
+CommentAnnotation:
+  Enabled: true
+
+DeprecatedClassMethods:
+  Enabled: true
+
+Documentation:
+  Enabled: false
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+DotPosition:
+  Enabled: false
+
+# Configuration parameters: AllowAdjacentOneLineDefs.
+EmptyLineBetweenDefs:
+  Enabled: true
+
+EmptyLines:
+  Enabled: true
+
+EmptyCaseCondition:
+  Enabled: false
+
+EmptyLinesAroundAccessModifier:
+  Enabled: true
+
+EvenOdd:
+  Enabled: true
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+FormatString:
+  Enabled: true
+  EnforcedStyle: format
+
+#FrozenStringLiteralComment:
+#  Enabled: false
+
+# Configuration parameters: AllowedVariables.
+GlobalVars:
+  Enabled: false
+
+HandleExceptions:
+  Enabled: true
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+HashSyntax:
+  Enabled: false
+
+IdenticalConditionalBranches:
+  Enabled: false
+
+# Configuration parameters: MaxLineLength.
+IfUnlessModifier:
+  Enabled: true
+
+IndentArray:
+  Enabled: true
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+IndentHash:
+  Enabled: true
+
+IndentationWidth:
+  Enabled: true
+
+InlineComment:
+  Enabled: false
+
+Lambda:
+  Enabled: false
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+LambdaCall:
+  Enabled: true
+
+LeadingCommentSpace:
+  Enabled: false
+
+LineLength:
+  Max: 150
+
+LiteralInInterpolation:
+  Enabled: true
+
+Loop:
+  Enabled: true
+
+Style/MethodCallWithoutArgsParentheses:
+  Enabled: true
+
+# Configuration parameters: CountComments.
+MethodLength:
+  Max: 90
+
+MultilineBlockChain:
+  Enabled: true
+
+MutableConstant:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 20
+
+NegatedIf:
+  Enabled: true
+
+NumericLiterals:
+  MinDigits: 15
+
+# Configuration parameters: CountKeywordArgs.
+ParameterLists:
+  Max: 4
+
+ParenthesesAsGroupedExpression:
+  Enabled: false
+
+# Configuration parameters: PreferredDelimiters.
+PercentLiteralDelimiters:
+  Enabled: true
+
+PerlBackrefs:
+  Enabled: true
+
+# Configuration parameters: NamePrefixBlacklist.
+PredicateName:
+  Enabled: true
+
+PreferredHashMethods:
+  Enabled: true
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+RaiseArgs:
+  Enabled: true
+  EnforcedStyle: compact
+
+RedundantBegin:
+  Enabled: true
+
+# Configuration parameters: AllowMultipleReturnValues.
+RedundantReturn:
+  Enabled: true
+
+RedundantSelf:
+  Enabled: false
+
+RescueModifier:
+  Enabled: false
+
+SelfAssignment:
+  Enabled: true
+
+# Configuration parameters: AllowAsExpressionSeparator.
+Semicolon:
+  Enabled: false
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+SignalException:
+  Enabled: false
+
+# Configuration parameters: Methods.
+SingleLineBlockParams:
+  Enabled: true
+
+# Configuration parameters: AllowIfMethodIsEmpty.
+SingleLineMethods:
+  Enabled: true
+
+SpaceBeforeFirstArg:
+  Enabled: false
+
+SpaceAfterComma:
+  Enabled: false
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+SpaceAroundEqualsInParameterDefault:
+  Enabled: true
+
+SpaceAroundOperators:
+  Enabled: true
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+SpaceBeforeBlockBraces:
+  Enabled: false
+
+# Configuration parameters: EnforcedStyle, SupportedStyles, EnforcedStyleForEmptyBraces, SpaceBeforeBlockParameters.
+SpaceInsideBlockBraces:
+  Enabled: false
+
+# Configuration parameters: EnforcedStyle, EnforcedStyleForEmptyBraces, SupportedStyles.
+SpaceInsideHashLiteralBraces:
+  Enabled: false
+
+SpaceInsideParens:
+  Enabled: false
+
+StringConversionInInterpolation:
+  Enabled: true
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+StringLiterals:
+  Enabled: false
+
+TrailingBlankLines:
+  Enabled: true
+
+# Configuration parameters: EnforcedStyleForMultiline, SupportedStyles.
+#TrailingCommaInLiteral:
+#  Enabled: false
+
+#TrailingCommaInArguments:
+#  Enabled: false
+
+TrailingWhitespace:
+  Enabled: true
+
+# Configuration parameters: ExactNameMatch, AllowPredicates, Whitelist.
+TrivialAccessors:
+  Enabled: true
+
+UselessAssignment:
+  Enabled: true
+
+Void:
+  Enabled: true
+
+WhileUntilDo:
+  Enabled: true
+
+# Configuration parameters: MaxLineLength.
+WhileUntilModifier:
+  Enabled: true
+
+WordArray:
+  MinSize: 25
