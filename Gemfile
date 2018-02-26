@@ -53,6 +53,8 @@ group :development do
   gem 'spring'
 
   gem 'rubocop'
+  gem 'ruby-debug-ide'
+  gem 'debase'
 end
 
 # admin
