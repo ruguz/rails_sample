@@ -19,6 +19,13 @@ class Api::BaseController < ApplicationController
     end
   end
 
+  def with_uuid_lock(uuid)
+    return yield if uuid.blank?
+    User.lock.find(uuid: uuid) do
+      yield
+    end
+  end
+
   private
 
   def parse_request

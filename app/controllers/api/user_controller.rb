@@ -12,7 +12,11 @@ class Api::UserController < Api::BaseController
     uuid = params[:uuid]
     name = params[:name]
     device_type = @api_request.device_type
-    user = User.register!(uuid, name, device_type)
-    render_response(body: { user: user }.to_json)
+    with_uuid_lock(uuid) do
+      user = User.register!(uuid, name, device_type)
+      user.generate_tag_name!
+      user.save!
+      render_response(body: { user: user }.to_json)
+    end
   end
 end

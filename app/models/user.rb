@@ -29,6 +29,15 @@ class User < ApplicationRecord
       user.register!(uuid, name, device_type, user_type: user_type)
       user
     end
+
+    def generate_tag_name(user_id, length = 6)
+      s = Random.new("#{Random.new_seed}+#{user_id.to_i}".to_i ).rand(34**length).to_s(34)
+      s = s.rjust(length, "0")
+      s.gsub!("0", "y") # rubocop:disable Performance/StringReplacement
+      s.gsub!("1", "z") # rubocop:disable Performance/StringReplacement
+      s.upcase!
+      s
+    end
   end
 
   def register!(uuid, name, device_type, user_type: nil)
@@ -39,8 +48,13 @@ class User < ApplicationRecord
     self.device_type = device_type
     self.user_type = user_type
     self.registered_at = Time.current
+    self.tag_name = "";
     self.save!
     true
+  end
+
+  def generate_tag_name!
+    self.tag_name = self.class.generate_tag_name(self.id)
   end
 
   private
