@@ -59,6 +59,7 @@ end
 
 # admin
 gem 'devise', '~> 4.1'
+gem 'rails_admin'
 
 # mysql
 gem 'annotate'
